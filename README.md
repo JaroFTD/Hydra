@@ -1,4 +1,4 @@
-<h1><a href="https://yaloftd.github.io/Dentistry/">Одностраничный сайт</a> очки виртуальной реальности</h1>
+<h1><a href="https://yaloftd.github.io/Hydra/">Одностраничный сайт</a> очки виртуальной реальности</h1>
 <ul>
   <li>Адаптив до 320px;</li>
   <li>Меню бургер;</li>
