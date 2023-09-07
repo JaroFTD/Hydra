@@ -441,6 +441,9 @@ body._lock {
     margin-left: 7%;
   }
 }
+.header__btn {
+  white-space: nowrap;
+}
 .header__btn:not(:last-child) {
   margin-right: 20px;
 }
@@ -506,7 +509,7 @@ body._lock {
     position: fixed;
     width: 100%;
     height: 100%;
-    padding: 0px 15px;
+    padding: 15px;
     left: 0;
     top: -100%;
     overflow: auto;
@@ -566,6 +569,7 @@ body._lock {
 }
 @media (max-width: 991.98px) {
   .menu__item {
+    text-align: center;
     margin: 0px 30px 30px;
   }
 }
@@ -650,6 +654,16 @@ body._lock {
 }
 @media (max-width: 991.98px) {
   .main-block__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0px;
   }
 }
@@ -876,6 +890,9 @@ body._lock {
   .swiper-main-block__slide:first-child .slide-swiper-main-block__content {
     padding-left: 38px;
   }
+}
+.swiper-main-block__slide:first-child .slide-swiper-main-block__icon {
+  margin-right: 10px;
 }
 @media (max-width: 991.98px) {
   .swiper-main-block__slide:first-child {
@@ -1238,6 +1255,8 @@ body._lock {
   }
 }
 .about__image {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   position: relative;
   z-index: 2;
   -webkit-box-flex: 0;
@@ -1247,6 +1266,9 @@ body._lock {
 }
 @media (max-width: 991.98px) {
   .about__image {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
     margin-bottom: 51px;
     padding: 0px 0px 63.854749%; /* 336/358 */
   }
@@ -1986,7 +2008,7 @@ body._lock {
 }
 
 .textarea {
-  height: 210px;
+  min-height: 210px;
 }
 
 .footer__container {
@@ -2096,6 +2118,7 @@ body._lock {
 }
 .menu-footer__list {
   position: relative;
+  max-width: 160px;
 }
 .menu-footer__list::after {
   content: "";
@@ -2130,6 +2153,9 @@ body._lock {
   }
 }
 
+.social-footer {
+  max-width: 300px;
+}
 .social-footer__title {
   line-height: 137.5%; /* 22px/16 */
   font-size: 16px;
