@@ -146,23 +146,10 @@ function intitForms(forms) {
          let formData = new FormData(form);
 
          if (error === 0) {
-            // для отправки спомощью AJAX
-            let response = await fetch('sendmail.php', {
-               method: 'POST',
-               body: formData
-            });
-            if (response.ok) {
-               let result = await response.json();
-               alert(result.message);
-               formPreview.innerHTML = '';
-               form.reset();
-               resultMessage.style.color = 'green';
-               resultMessage.textContent = 'Отправленно';
-            }else{
-               alert('Ошибка');
-               resultMessage.style.color = 'red';
-               resultMessage.textContent = 'Ошибка';
-            }
+            form.reset();
+            resultMessage.style.color = 'green';
+            resultMessage.textContent = 'Отправленно';
+            form.appendChild(resultMessage);
          } else {
             resultMessage.style.color = 'red';
             resultMessage.textContent = 'Ошибка';
